@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userDao" class="code.dao.impl.UserDaoImpl">
+        <!--        注入成员变量 -->
+        <!--        <property name="username" value="123"/>-->
+        <!--        <property name="age" value="33"/>-->
+
+        <!--        <property name="saoList">-->
+        <!--            <map>-->
+        <!--            </map>-->
+        <!--        </property>-->
+    </bean>
+
+
+    <!--    set方法构造-->
+    <!--    <bean id="userServiceImpl" class="code.service.impl.UserServiceImpl">-->
+    <!--        <property name="userDao" ref="userDao"/>-->
+    <!--    </bean>-->
+
+    <!--     p 命名空间注入-->
+    <!--    <bean id="userServiceImpl" class="code.service.impl.UserServiceImpl" p:userDao-ref="userDao"/>-->
+
+
+    <!--    构造方法注入-->
+    <bean id="userServiceImpl" class="code.service.impl.UserServiceImpl">
+        <constructor-arg name="userDao" ref="userDao"/>
+    </bean>
+
+</beans>
