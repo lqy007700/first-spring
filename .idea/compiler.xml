@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring_mvc" />
-        <module name="spring01" />
-        <module name="spring02" />
         <module name="spring-jdbc" />
         <module name="spring_tx" />
+        <module name="spring_mvc" />
+        <module name="spring_mybatis" />
+        <module name="spring01" />
+        <module name="spring02" />
+        <module name="spring_mybatis_dao" />
         <module name="spring_aop" />
       </profile>
     </annotationProcessing>
@@ -20,6 +22,8 @@
       <module name="spring02" target="11" />
       <module name="spring_aop" target="11" />
       <module name="spring_mvc" target="11" />
+      <module name="spring_mybatis" target="11" />
+      <module name="spring_mybatis_dao" target="11" />
       <module name="spring_tx" target="11" />
       <module name="srping_aop" target="11" />
     </bytecodeTargetLevel>
