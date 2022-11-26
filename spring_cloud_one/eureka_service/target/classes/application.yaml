@@ -1,0 +1,10 @@
+server:
+  port: 9003
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false # 是否将自己注册到注册中心
+    fetch-registry: false # 是否从eureka 获取注册信息
+    service-url: #    配置暴露给client的请求地址
+      defaultZone: http://${eureka.instance.hostname}:9003/eureka/

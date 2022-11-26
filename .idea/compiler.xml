@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-jdbc" />
         <module name="spring_tx" />
+        <module name="spring_cloud_one" />
         <module name="spring_mvc" />
         <module name="spring_mybatis" />
         <module name="spring01" />
@@ -21,6 +22,7 @@
       <module name="spring01" target="1.5" />
       <module name="spring02" target="11" />
       <module name="spring_aop" target="11" />
+      <module name="spring_cloud_one" target="11" />
       <module name="spring_mvc" target="11" />
       <module name="spring_mybatis" target="11" />
       <module name="spring_mybatis_dao" target="11" />
@@ -30,6 +32,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring_cloud_one" options="-parameters" />
       <module name="srping_aop" options="-parameters" />
     </option>
   </component>
